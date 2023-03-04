@@ -1,0 +1,156 @@
+#stagiaireArray .stagiaire .id,
+#stagiaireArray .stagiaire .nom,
+#stagiaireArray .stagiaire .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "comfort";
+  src: url(../src/font/Comfortaa-VariableFont_wght.ttf);
+}
+body {
+  box-sizing: border-box;
+  font-family: "comfort";
+}
+
+#blocPage {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+#stagiaireArray {
+  margin: auto;
+  margin-top: 3rem;
+  width: 90%;
+  padding: 0.5rem;
+  background: linear-gradient(0deg, rgb(208, 208, 208) 22%, rgb(255, 255, 255) 100%);
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  flex-wrap: wrap;
+}
+#stagiaireArray h3 {
+  width: 90%;
+  text-align: center;
+}
+#stagiaireArray .stagiaire {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  flex-wrap: no-wrap;
+  margin: 0.3rem 0;
+}
+#stagiaireArray .stagiaire .id {
+  width: 20%;
+}
+#stagiaireArray .stagiaire .nom,
+#stagiaireArray .stagiaire .login {
+  width: 40%;
+}
+#stagiaireArray #arrayHeader {
+  margin-top: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgb(131, 131, 131) 100%);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.form {
+  margin: auto;
+  background: linear-gradient(0deg, rgb(208, 208, 208) 22%, rgb(255, 255, 255) 100%);
+  margin-top: 2rem;
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  flex-wrap: wrap;
+}
+.form h2 {
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+.form h3 {
+  width: 90%;
+  color: red;
+  margin: auto;
+  text-align: center;
+  height: 1.5rem;
+}
+.form label {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.form label p {
+  width: 90%;
+  font-weight: bold;
+}
+.form label input {
+  outline: none;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.form #buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 90%;
+}
+.form #buttons button {
+  color: white;
+  font-size: 1.5rem;
+  background: linear-gradient(0deg, rgb(29, 29, 29) 0%, rgb(131, 131, 131) 100%);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.form #buttons button a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.form #buttons button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}/*# sourceMappingURL=style.css.map */

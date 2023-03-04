@@ -1,0 +1,141 @@
+//imports
+@import './couleurs';
+@import './mixins';
+@import './typo';
+
+body {
+    box-sizing: border-box;
+    font-family: "comfort";
+}
+
+#blocPage {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+#stagiaireArray {
+    margin: auto;
+    margin-top: 3rem;
+    width: 90%;
+    padding: .5rem;
+    background: linear-gradient(0deg, rgba(208, 208, 208, 1) 22%, rgba(255, 255, 255, 1) 100%);
+    @include border(1px solid black, 1rem, (rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px));
+    @include flex(flex, center, center, none, wrap);
+
+
+    h3 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .stagiaire {
+        width: 90%;
+        @include flex(flex, center, center, none, no-wrap);
+        margin: .3rem 0;
+
+        .id,
+        .nom,
+        .login {
+            @extend %flex_center;
+        }
+
+        .id {
+            width: 20%;
+        }
+
+        .nom,
+        .login {
+            width: 40%;
+        }
+
+    }
+
+    #arrayHeader {
+        margin-top: 1rem;
+        color: white;
+        font-weight: bold;
+        background-color: black;
+        background: linear-gradient(0deg, rgba(29, 29, 29, 1) 0%, rgba(131, 131, 131, 1) 100%);
+        @include border(none, 1rem, (rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px));
+    }
+}
+
+.form {
+    margin: auto;
+    background: linear-gradient(0deg, rgba(208, 208, 208, 1) 22%, rgba(255, 255, 255, 1) 100%);
+    margin-top: 2rem;
+    width: 50%;
+    padding: .5rem;
+    @include border(1px solid black, 1rem, (rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px));
+    @include flex(flex, center, center, none, wrap);
+
+    h2 {
+        width: 90%;
+        border-bottom: 1px solid black;
+    }
+
+    h3 {
+        width: 90%;
+        color: red;
+        margin: auto;
+        text-align: center;
+        height: 1.5rem;
+    }
+
+    label {
+        width: 40%;
+        @include flex(flex, center, center, none, wrap);
+        text-align: center;
+
+        p {
+            width: 90%;
+            font-weight: bold;
+        }
+
+        input {
+            outline: none;
+            font-size: 1rem;
+            @include border(none, .3rem, (rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px));
+        }
+    }
+
+    #buttons {
+        @include flex(flex, center, center, 4rem, wrap);
+        margin-top: 1rem;
+        width: 90%;
+
+        button {
+            color: white;
+            font-size: 1.5rem;
+            background: linear-gradient(0deg, rgba(29, 29, 29, 1) 0%, rgba(131, 131, 131, 1) 100%);
+            @include border(none, .5rem, (rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px));
+
+            a {
+                color: white;
+                font-size: 1.5rem;
+                text-decoration: none;
+            }
+        }
+
+        button:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+    }
+}
